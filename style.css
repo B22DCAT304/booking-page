@@ -1,0 +1,296 @@
+
+#header {
+    width: 100%;
+    padding:0px 30px;
+    margin-top:0px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color: #fff;
+    border-bottom: 2px solid #ccc;
+        padding-bottom: 10px;
+}
+
+#menu {
+    list-style:none;
+    display: flex;
+    background-color: #fff;
+    height: 90px;
+    size: 100px;
+    align-items: center;
+}
+#menu .item:hover {
+    background-color:orange;
+}
+#menu .item {
+    padding:10px 20px 10px 20px;
+    margin:25px 25px;
+    border-radius: 20px;
+    transition:0.4s;
+    align-items: center;
+}
+
+#menu .item a {
+    color:#1d1a1a;
+    text-decoration: none;
+    height: 100px;
+}
+#search {
+    width: 400px;
+}
+
+#search form {
+    text-align: center;
+}
+
+#search form input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#search form button[type="submit"] {
+    background-color: #362f2f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius:  
+   5px;
+    cursor: pointer;
+}
+#search form button :hover {
+    background-color: orange;
+}
+
+#search form  :hover {
+    background-color:aliceblue;
+}
+#footer {
+    width: 100%;
+    background:rgb(0,0,0,0.79);
+    height: 260px;
+    margin-top:0px;
+    padding:0px 63px;
+    padding-top:57px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#footer .box {
+    width: 250px;
+    color:#fff;
+}
+
+#footer .box .quick-menu {
+    margin-top:40px;
+
+}
+
+#footer .box .quick-menu .item{
+    margin-bottom:12px;
+
+}
+#footer .box .quick-menu ,.item a{
+    color:#fff;
+    text-decoration: none;
+}
+
+#footer .box form input {
+    width: 294px;
+    height: 42px;
+    background:transparent;
+    padding-left:20px;
+    color:#fff;
+    margin-top:30px;
+}
+
+#footer .box form button {
+    background:#362f2f;
+    box-shadow: 5px 5px 4px rgba(0,0,0.25);
+    width: 163px;
+    height: 38px;
+    margin-top:29px;
+    color:#fff;
+}
+.trailer-title {
+    color: black;
+    position: relative;
+    display: inline-block;
+}
+
+.trailer-title::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: deepskyblue;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            /* Căn giữa theo chiều ngang */
+            align-items: center;
+            /* Căn giữa theo chiều dọc nếu cần */
+            margin-top: 20px;
+            /* Thêm khoảng cách từ trên */
+            width: 100%;
+            /* Đảm bảo nó chiếm toàn bộ chiều rộng */
+        }
+        .seats-container {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .row-seats {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+        }
+
+        .seat {
+            position: relative;
+            width: 40px;
+            height: 40px;
+            background-color: pink;
+            /* Red color for the seat */
+            margin: 5px;
+            border-radius: 8px 8px 0 0;
+            cursor: pointer;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .seat::before,
+        .seat::after {
+            content: "";
+            position: absolute;
+            top: 5px;
+            width: 10px;
+            height: 15px;
+            background-color: #333;
+            /* Dark color for armrests */
+        }
+
+        .seat::before {
+            left: -12px;
+            border-radius: 5px 0 0 5px;
+        }
+
+        .seat::after {
+            right: -12px;
+            border-radius: 0 5px 5px 0;
+        }
+
+        .seat.selected {
+            background-color: #4CAF50;
+            /* Green for selected seats */
+        }
+
+        .seat.occupied {
+            background-color: #FF0000;
+            /* Red for already booked seats */
+            cursor: not-allowed;
+        }
+
+        .seat-name {
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        .seat-info-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 20px;
+        }
+
+        .seat-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .seat-info .seat {
+            margin-right: 10px;
+        }
+
+        .divider {
+            width: 80%;
+            border-top: 1px solid #ccc;
+            margin: 20px 0;
+        }
+        .total-amount {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #333;
+        }
+        .payment-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 400px; /* Độ rộng tối đa */
+            margin: 0 auto; /* Căn giữa theo chiều ngang */
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
+        }
+        
+        .payment-container h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        
+        .payment-container label {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        
+        .payment-container input[type="text"],
+        .payment-container input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        .payment-container button {
+            padding: 10px 20px;
+            margin-top: 20px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .payment-container button:hover {
+            background-color: #0056b3;
+        }
+        .payment-section{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 400px; /* Độ rộng tối đa */
+            margin: 0 auto; /* Căn giữa theo chiều ngang */
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
+        }
+        
